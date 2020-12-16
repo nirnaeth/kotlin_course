@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     print("Give me a number:\n")
 
     try {
