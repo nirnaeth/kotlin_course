@@ -9,7 +9,12 @@ fun main(args: Array<String>) {
             false -> println("The number is odd")
         }
 
-        println("The factorial of $input is ${calculateFactorial(input)}")
+        if (input >= 0) {
+            println("The factorial of $input is ${calculateFactorial(input)}")
+        } else {
+            print("The factorial of a negative number is undefined")
+        }
+
 
     } catch (e: NumberFormatException) {
         print("The input is not a number")
