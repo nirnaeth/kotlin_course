@@ -1,6 +1,4 @@
 fun main() {
-    val vowels = "aeiouy"
-
     print("Give me a character:\n")
     var input: String = readLine().toString()
 
@@ -11,9 +9,17 @@ fun main() {
     }
 
     val character: Char = input.toCharArray().first()
-    if (vowels.contains(character, ignoreCase = true)) {
+
+    if(isVowel(character)) {
         print("It's a vowel")
     } else {
         print("It's not a vowel")
     }
+
+}
+
+fun isVowel(character: Char): Boolean {
+    val vowels = "aeiouy"
+
+    return vowels.contains(character, ignoreCase = true)
 }
