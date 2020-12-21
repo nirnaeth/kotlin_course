@@ -2,8 +2,8 @@ fun main() {
     print("Give me a character:\n")
     var input: String = readLine().toString()
 
-    while (input.length > 1) {
-        print("Please, use only one character\n")
+    while (input.length != 1) {
+        print("Please, use one character.\n")
         print("Give me a character:\n")
         input = readLine().toString()
     }
